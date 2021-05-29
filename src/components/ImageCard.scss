@@ -1,7 +1,7 @@
 .image-card {
-  height: 491px;
+  height: 591px;
   .image {
-    height: 491px;
+    height: 591px;
   }
   .no-padding {
     padding: 0;
@@ -23,28 +23,43 @@
       margin-bottom: 25px;
       @include heading-font;
     }
+    .intro-heading1 {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 25px;
+      @include heading-font;
+    }
   }
 }
 @media (min-width: 768px) {
   .image-card {
-    height: 759px;
+    height: 859px;
     .image {
-      height: 759px;
+      height: 859px;
     }
     .intro-text {
       padding-top: 300px;
       padding-bottom: 200px;
       .intro-lead-in {
-        font-size: 40px;
+        font-size: 125px;
+        font-weight: bold;
         font-style: italic;
-        line-height: 40px;
-        margin-bottom: 25px;
+        line-height: 75px;
+        margin-bottom: 55px;
         @include serif-font;
       }
       .intro-heading {
-        font-size: 75px;
+        font-size: 30px;
         font-weight: 700;
-        line-height: 75px;
+        line-height: 40px;
+        margin-bottom: 50px;
+        @include heading-font;
+      }
+      .intro-heading1 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
         margin-bottom: 50px;
         @include heading-font;
       }

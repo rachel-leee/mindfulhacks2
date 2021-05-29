@@ -1,9 +1,8 @@
 ---
-copyright: "Copyright © Start Bootstrap 2020"
+copyright: "Copyright © MindfulHacks 2021"
 social: {
-  twitter: "#",
-  facebook: "#",
-  medium: "#"
+  linkedin: "company/mindfulhacks",
+  instagram: "mindfulhackssg"
 }
 privacyText: "Privacy Policy"
 privacyHref: "#!"

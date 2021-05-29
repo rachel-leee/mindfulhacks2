@@ -74,7 +74,7 @@ gatsby new my-blog-folder https://github.com/thundermiracle/gatsby-startbootstra
 - nullable items (if defined):
   
   - `anchor` in section markdown: display in menu if defined in sections' markdown
-  - items in `social`: `twitter, facebook, linkedin, github, medium`
+  - items in `social`: `twitter, facebook, linkedin, github, medium, instagram`
   - `jumpToAnchor, jumpToAnchorText` in Top.md: add button in Top section
 
 ## i18n Configuration

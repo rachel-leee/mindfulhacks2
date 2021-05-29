@@ -45,7 +45,13 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
     >
       <Container>
         <Navbar.Brand className="cursor-pointer" onClick={handleBrandClick}>
-          {brand}
+          <img
+            alt=""
+            src="/MindfulHacksLogo.png"
+            width="60px"
+            height="60px"
+            className="d-inline-block align-top"
+          />{" "}
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu} aria-label="Toggle navigation">
           {menuText}
@@ -57,7 +63,6 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
               <NavItem key={anchor} to={anchor} onClick={closeMenu} />
             ))}
           </Nav>
-          {extraItems}
         </Navbar.Collapse>
       </Container>
     </Navbar>

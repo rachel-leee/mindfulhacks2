@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import { Button } from "react-bootstrap";
 import useSmoothScrollTo from "hooks/useSmoothScrollTo";
@@ -10,14 +11,20 @@ const Top = ({ frontmatter }) => {
     return null;
   }
 
-  const { header, subheader, imageFileName, jumpToAnchor, jumpToAnchorText } = frontmatter;
+  const { header, header1, subheader, imageFileName, jumpToAnchor, jumpToAnchorText } = frontmatter;
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const scrollToSection = useSmoothScrollTo(jumpToAnchor);
 
   let extraInfoPart;
   if (jumpToAnchor && jumpToAnchorText) {
     extraInfoPart = (
-      <Button size="xl" variant="primary" className="text-uppercase" onClick={scrollToSection}>
+      <Button
+        size="xl"
+        variant="primary"
+        className="text-uppercase"
+        href="https://forms.gle/uAhXxTktqtJm4SfZA"
+        target="_blank"
+      >
         {jumpToAnchorText}
       </Button>
     );
@@ -27,6 +34,7 @@ const Top = ({ frontmatter }) => {
     <ImageCard
       imageFileName={imageFileName}
       header={header}
+      header1={header1}
       subheader={subheader}
       extraInfo={extraInfoPart}
     />

@@ -15,7 +15,7 @@ const Footer = ({ frontmatter }) => {
     privacyText,
     termsHref,
     termsText,
-    social: { facebook, github, linkedin, medium, twitter },
+    social: { facebook, github, linkedin, medium, twitter, instagram },
   } = frontmatter;
 
   return (
@@ -29,6 +29,7 @@ const Footer = ({ frontmatter }) => {
             {twitter ? <SocialIcons.Twitter userName={twitter} /> : null}
             {facebook ? <SocialIcons.Facebook userName={facebook} /> : null}
             {linkedin ? <SocialIcons.Linkedin userName={linkedin} /> : null}
+            {instagram ? <SocialIcons.Instagram userName={instagram} /> : null}
             {github ? <SocialIcons.Github userName={github} /> : null}
             {medium ? <SocialIcons.Medium userName={medium} /> : null}
           </Col>

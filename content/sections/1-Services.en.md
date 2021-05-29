@@ -1,22 +1,17 @@
 ---
-anchor: "Services"
-header: "Services"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+anchor: "Event Details"
+header: "Event Details"
+subheader: ""
 services: [
   {
-    iconName: "ShoppingCartIcon",
-    header: "E-Commerce",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    iconName: "QuestionCircleIcon",
+    header: "What is MindfulHacks?",
+    content: "MindfulHacks, Singapore’s first student-run mental health hackathon, was founded to encourage innovation of solutions to mental health issues and empower students from all backgrounds to take action for causes they care about and combat the stigma of mental illness. As a student-run hackathon, we aim to persuade everyone, including programming beginners, that anyone is able to code. We aim to reach over 100 students from Polytechnics, Universities and Junior Colleges."
   },
   {
-    iconName: "LaptopIcon",
-    header: "Responsive Design",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-  },
-  {
-    iconName: "LockIcon",
-    header: "Web Security",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    iconName: "CalendarIcon",
+    header: "Mark your calendars!",
+    content: "4th September to 5th September 2021 on Zoom"
   }
 ]
 ---

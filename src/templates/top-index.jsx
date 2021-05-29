@@ -41,6 +41,7 @@ export const query = graphql`
           content
           copyright
           header
+          header1
           email
           imageFileName
           jumpToAnchor
@@ -56,6 +57,13 @@ export const query = graphql`
           }
           privacyHref
           privacyText
+          timeline {
+            content
+            header
+            imageContent
+            imageFileName
+            subheader
+          }
           services {
             content
             header
@@ -68,6 +76,7 @@ export const query = graphql`
             linkedin
             medium
             twitter
+            instagram
           }
           subheader
           teamMember {
@@ -79,6 +88,7 @@ export const query = graphql`
               linkedin
               medium
               twitter
+              instagram
             }
             subheader
           }
@@ -86,13 +96,6 @@ export const query = graphql`
           termsHref
           termsText
           title
-          timeline {
-            content
-            header
-            imageContent
-            imageFileName
-            subheader
-          }
         }
         fields {
           fileName
