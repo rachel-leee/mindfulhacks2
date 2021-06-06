@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import { Col } from "react-bootstrap";
 import Image from "components/Image";
+import Icon from "components/Icon";
 import PortfolioDetailDialog from "components/PortfolioDetailDialog";
 
 import "./PortfolioItem.scss";
@@ -18,7 +19,9 @@ const PortfolioItem = ({
   extraInfo,
 }) => {
   const [showDetail, setShowDetail] = React.useState(false);
-
+  const handleShowDetail = React.useCallback(() => {
+    setShowDetail(true);
+  }, []);
   const handleHideDetail = React.useCallback(() => {
     setShowDetail(false);
   }, []);

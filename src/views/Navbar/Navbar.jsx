@@ -12,8 +12,8 @@ import NavItem from "components/NavItem";
 
 import "./Navbar.scss";
 
-const MyNavbar = ({ anchors, frontmatter }) => {
-  const { menuText } = frontmatter;
+const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
+  const { brand, menuText } = frontmatter;
 
   const handleScrollToTop = useSmoothScrollTo(0);
 
@@ -72,11 +72,13 @@ const MyNavbar = ({ anchors, frontmatter }) => {
 MyNavbar.propTypes = {
   anchors: PropTypes.arrayOf(PropTypes.string),
   frontmatter: PropTypes.object,
+  extraItems: PropTypes.any,
 };
 
 MyNavbar.defaultProps = {
   anchors: [],
-  frontmatter: {}
+  frontmatter: {},
+  extraItems: null,
 };
 
 export default MyNavbar;

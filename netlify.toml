@@ -4,6 +4,7 @@
 =======
 >>>>>>> parent of 6f7ac7f (abc)
 [build]
+<<<<<<< HEAD
 
 
 # Settings in the [build] context are global and are applied to all contexts
@@ -13,3 +14,7 @@
 
   command = "gatsby develop"
   publish = "public"
+=======
+  command = "gatsby develop"
+  publish = "public"
+>>>>>>> parent of 69d13ba (update1)

@@ -10,7 +10,7 @@ const Contact = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header, subheader, email } = frontmatter;
+  const { anchor, header, subheader, telephone, email } = frontmatter;
 
   return (
     <PageSection className={className} id={anchor}>
