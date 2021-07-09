@@ -40,7 +40,7 @@ const PortfolioDetailDialog = ({
         <div className="mx-auto">
           <Button variant="primary" onClick={onHide}>
             <Icon iconName="CloseIcon" />
-            &nbsp; Close Project
+            &nbsp; Close
           </Button>
         </div>
       </Modal.Footer>
@@ -55,7 +55,7 @@ PortfolioDetailDialog.propTypes = {
   header: PropTypes.string,
   subheader: PropTypes.string,
   content: PropTypes.string,
-  extraInfo: PropTypes.any,
+  extraInfo: PropTypes.string,
 };
 
 PortfolioDetailDialog.defaultProps = {
@@ -65,7 +65,7 @@ PortfolioDetailDialog.defaultProps = {
   header: "",
   subheader: "",
   content: "",
-  extraInfo: null,
+  extraInfo: "",
 };
 
 export default PortfolioDetailDialog;

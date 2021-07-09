@@ -11,6 +11,7 @@ import Icon from "components/Icon";
 import NavItem from "components/NavItem";
 
 import "./Navbar.scss";
+import shoe1 from './MindfulHacksLogo.png'
 
 const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
   const { brand, menuText } = frontmatter;
@@ -45,13 +46,7 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
     >
       <Container>
         <Navbar.Brand className="cursor-pointer" onClick={handleBrandClick}>
-          <img
-            alt=""
-            src="/MindfulHacksLogo.png"
-            width="60px"
-            height="60px"
-            className="d-inline-block align-top"
-          />{" "}
+        <img src={shoe1} height={50} width={50}/>
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu} aria-label="Toggle navigation">
           {menuText}

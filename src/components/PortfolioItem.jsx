@@ -29,11 +29,24 @@ const PortfolioItem = ({
   return (
     <>
       <Col md={4} sm={6} className="portfolio-item">
+        <a
+          role="button"
+          tabIndex={-1}
+          className="portfolio-link"
+          data-toggle="modal"
+          onClick={handleShowDetail}
+        >        
         <Image
           className="img-fluid"
           fileName={imageFileName}
           alt={imageAlt || header || subheader}
         />
+        <div className="portfolio-hover">
+            <div className="portfolio-hover-content">
+              <Icon iconName="PlusIcon" size="2x" />
+            </div>
+          </div>
+        </a>
         <div className="portfolio-caption">
           <h4>{header}</h4>
           {subheader ? <p className="text-muted">{subheader}</p> : null}
@@ -61,7 +74,7 @@ PortfolioItem.propTypes = {
   content: PropTypes.string,
   imageFileNameDetail: PropTypes.string,
   imageAltDetail: PropTypes.string,
-  extraInfo: PropTypes.any,
+  extraInfo: PropTypes.string,
 };
 
 PortfolioItem.defaultProps = {
@@ -70,7 +83,7 @@ PortfolioItem.defaultProps = {
   content: "",
   imageFileNameDetail: "",
   imageAltDetail: "",
-  extraInfo: null,
+  extraInfo: "",
 };
 
 export default PortfolioItem;

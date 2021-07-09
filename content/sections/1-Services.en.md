@@ -6,7 +6,7 @@ services: [
   {
     iconName: "QuestionCircleIcon",
     header: "What is MindfulHacks?",
-    content: "MindfulHacks, Singapore’s first student-run mental health hackathon, was founded to encourage innovation of solutions to mental health issues and empower students from all backgrounds to take action for causes they care about and combat the stigma of mental illness. As a student-run hackathon, we aim to persuade everyone, including programming beginners, that anyone is able to code. We aim to reach over 100 students from Polytechnics, Universities and Junior Colleges."
+    content: "MindfulHacks was founded as Singapore's first Mental Health-themed Student Hackathon. It is a 24-hour overnight hackathon where attendees work to build a software project that addresses mental health issues. Our mission is to encourage students to come together and innovate solutions to mental health issues and combat the stigma of mental illness. We welcome students from Universities, Polytechnics, ITEs, and Junior Colleges."
   },
   {
     iconName: "CalendarIcon",

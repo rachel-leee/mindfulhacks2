@@ -34,10 +34,7 @@ export const query = graphql`
         frontmatter {
           brand
           anchor
-          clients {
-            href
-            imageFileName
-          }
+
           content
           copyright
           header
@@ -57,13 +54,7 @@ export const query = graphql`
           }
           privacyHref
           privacyText
-          timeline {
-            content
-            header
-            imageContent
-            imageFileName
-            subheader
-          }
+
           services {
             content
             header
@@ -81,7 +72,7 @@ export const query = graphql`
           subheader
           teamMember {
             header
-            imageFileName
+          
             social {
               facebook
               github
@@ -92,7 +83,7 @@ export const query = graphql`
             }
             subheader
           }
-          telephone
+        
           termsHref
           termsText
           title
@@ -125,7 +116,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
 
   return (
     <>
-      <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
+      <SEO lang={langKey} title="Home" keywords={keywords} description={description} />
       <Navbar
         anchors={anchors}
         frontmatter={navBarNode.frontmatter}
